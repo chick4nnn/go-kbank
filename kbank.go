@@ -50,7 +50,7 @@ func New(username, password, accountNo string) *KBank {
 
 var (
 	tokenIDPattern  = regexp.MustCompile(`<input type="hidden" name="tokenId" id="tokenId" value="([0-9]+)"/>`)
-	txtParamPattern = regexp.MustCompile(` <input type="hidden" name="txtParam" value="([a-z0-9]+)" />`)
+	txtParamPattern = regexp.MustCompile(`<input type="hidden" name="txtParam" value="([a-z0-9]+)" />`)
 )
 
 // Login ...
